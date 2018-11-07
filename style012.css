@@ -1,0 +1,42 @@
+body{
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin:0;
+  padding: 20px;
+}
+#grid ol {
+  border-right: 1px solid gray;
+  width: 80px;
+  margin : 0;
+  padding : 20px;
+  padding-left: 40px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid h3,h4{
+  margin:0;
+}
+#grid h2{
+  margin-bottom: 0;
+}
+@media(max-width:600px){
+  h1 {
+    border-bottom: none;
+    text-align: left;
+  }
+  #grid{
+    display: block;
+  }
+  #grid ol {
+    border-right: none;
+}
